@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  background-color: #cccccc;
+  background-image: url(./assets/aesthetic.jpg);
+  object-fit: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: whitesmoke;
+}
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.square {
+  background: darkkhaki;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 70px;
+  font-weight: bold;
+  height: 150px;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  color: #fff;
+}
+
+.square:hover {
+  background: dimgrey;
+}
+
+.board-row {
+  display: flex;
+}
+
+.status {
+  margin: 70px auto;
+  font-size: 60px;
+  text-align: center;
+  color: olive;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.game-info {
+  margin-top: 50px;
+  text-align: center;
+
+  color: black;
+}
+
+.list-history > li {
+  padding: 5px;
+}
+
+.list-btn {
+  padding: 8px;
+  background-color: darkkhaki;
+  border: none;
+  border-radius: 5px;
+}
